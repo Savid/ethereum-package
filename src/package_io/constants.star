@@ -101,6 +101,7 @@ NETWORK_NAME = struct(
     kurtosis="kurtosis",
     verkle="verkle",
     shadowfork="shadowfork",
+    peerdas-devnet-0="peerdas-devnet-0",
 )
 
 PUBLIC_NETWORKS = (
@@ -113,6 +114,7 @@ NETWORK_ID = {
     "mainnet": 1,
     "sepolia": 11155111,
     "holesky": 17000,
+    "peerdas-devnet-0": 7071720988,
 }
 
 CHECKPOINT_SYNC_URL = {
@@ -126,6 +128,7 @@ GENESIS_VALIDATORS_ROOT = {
     "mainnet": "0x4b363db94e286120d76eb905340fdd4e54bfe9f06bf33ff6cf5ad27f511bfe95",
     "sepolia": "0xd8ea171f3c94aea21ebc42a1ed61052acf3f9209c00e4efbaaddac09ed9b8078",
     "holesky": "0x9143aa7c615a7f7115e2b6aac319c03529df8242ae705fba9df39b79c59fa8b1",
+    "peerdas-devnet-0": "0x4b363db94e286120d76eb905340fdd4e54bfe9f06bf33ff6cf5ad27f511bfe95",
 }
 
 DEPOSIT_CONTRACT_ADDRESS = {
@@ -133,12 +136,14 @@ DEPOSIT_CONTRACT_ADDRESS = {
     "sepolia": "0x7f02C3E3c98b133055B8B348B2Ac625669Ed295D",
     "holesky": "0x4242424242424242424242424242424242424242",
     "ephemery": "0x4242424242424242424242424242424242424242",
+    "peerdas-devnet-0": "0x6f22fFbC56eFF051aECF839396DD1eD9aD6BBA9D"
 }
 
 GENESIS_TIME = {
     "mainnet": 1606824023,
     "sepolia": 1655733600,
     "holesky": 1695902400,
+    "peerdas-devnet-0": 1715763245,
 }
 
 VOLUME_SIZE = {
@@ -231,6 +236,21 @@ VOLUME_SIZE = {
         "nimbus_volume_size": 1000,  # 1GB
         "lodestar_volume_size": 1000,  # 1GB
         "grandine_volume_size": 1000,  # 1GB
+    },
+    "peerdas-devnet-0": {
+        "geth_volume_size": 100000,  # 100GB
+        "erigon_volume_size": 200000,  # 200GB
+        "nethermind_volume_size": 100000,  # 100GB
+        "besu_volume_size": 100000,  # 100GB
+        "reth_volume_size": 200000,  # 200GB
+        "ethereumjs_volume_size": 100000,  # 100GB
+        "nimbus_eth1_volume_size": 100000,  # 100GB
+        "prysm_volume_size": 100000,  # 100GB
+        "lighthouse_volume_size": 100000,  # 100GB
+        "teku_volume_size": 100000,  # 100GB
+        "nimbus_volume_size": 100000,  # 100GB
+        "lodestar_volume_size": 100000,  # 100GB
+        "grandine_volume_size": 100000,  # 100GB
     },
 }
 
@@ -401,6 +421,34 @@ RAM_CPU_OVERRIDES = {
         "lodestar_max_mem": 2048,  # 2GB
         "lodestar_max_cpu": 1000,  # 1 core
         "grandine_max_mem": 2048,  # 2GB
+        "grandine_max_cpu": 1000,  # 1 core
+    },
+    "peerdas-devnet-0": {
+        "geth_max_mem": 4096,  # 4GB
+        "geth_max_cpu": 1000,  # 1 core
+        "erigon_max_mem": 4096,  # 4GB
+        "erigon_max_cpu": 1000,  # 1 core
+        "nethermind_max_mem": 4096,  # 4GB
+        "nethermind_max_cpu": 1000,  # 1 core
+        "besu_max_mem": 4096,  # 4GB
+        "besu_max_cpu": 1000,  # 1 core
+        "reth_max_mem": 4096,  # 4GB
+        "reth_max_cpu": 1000,  # 1 core
+        "ethereumjs_max_mem": 4096,  # 4GB
+        "ethereumjs_max_cpu": 1000,  # 1 core
+        "nimbus_eth1_max_mem": 4096,  # 4GB
+        "nimbus_eth1_max_cpu": 1000,  # 1 core
+        "prysm_max_mem": 4096,  # 4GB
+        "prysm_max_cpu": 1000,  # 1 core
+        "lighthouse_max_mem": 4096,  # 4GB
+        "lighthouse_max_cpu": 1000,  # 1 core
+        "teku_max_mem": 4096,  # 4GB
+        "teku_max_cpu": 1000,  # 1 core
+        "nimbus_max_mem": 4096,  # 4GB
+        "nimbus_max_cpu": 1000,  # 1 core
+        "lodestar_max_mem": 4096,  # 4GB
+        "lodestar_max_cpu": 1000,  # 1 core
+        "grandine_max_mem": 4096,  # 4GB
         "grandine_max_cpu": 1000,  # 1 core
     },
 }
